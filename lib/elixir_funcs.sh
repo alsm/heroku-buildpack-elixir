@@ -22,11 +22,8 @@ function install_elixir() {
   mkdir -p $(elixir_path)
   cd $(elixir_path)
 
-  if [ ${STACK} = "cedar-14" ] ; then
-    unzip -q ${cache_path}/$(elixir_download_file)
-  else
-    jar xf ${cache_path}/$(elixir_download_file)
-  fi
+  unzip -q ${cache_path}/$(elixir_download_file)
+  #jar xf ${cache_path}/$(elixir_download_file)
 
   cd - > /dev/null
 
