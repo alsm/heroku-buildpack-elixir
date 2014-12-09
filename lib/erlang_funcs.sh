@@ -4,7 +4,7 @@ function erlang_tarball() {
 
 
 function download_erlang() {
-  erlang_package_url="http://s3.hex.pm/builds/erlang/ubuntu-14.04"
+  erlang_package_url="http://s3.hex.pm/builds/erlang/ubuntu-10.04"
 
   erlang_package_url="${erlang_package_url}/$(erlang_tarball)"
 
